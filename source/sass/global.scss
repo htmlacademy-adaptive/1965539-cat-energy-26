@@ -1,23 +1,23 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-b {
-  margin: 0;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// ul,
+// b {
+//   margin: 0;
+// }
 
-ul,
-b {
-  padding: 0;
-}
+// ul,
+// b {
+//   padding: 0;
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
 .visually-hidden {
   position: absolute;
@@ -32,24 +32,33 @@ a {
   overflow: hidden;
 }
 
-// @font-face {
-//   font-family: "PT Sans";
-//   font-weight: 400;
-//   font-style: normal;
-//   src:
-//     url("../fonts/ptsans.woff2") format("woff2"),
-//     url("../fonts/ptsans.woff") format("woff");
-// }
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: "PT Sans";
-//   font-weight: 700;
-//   font-style: normal;
-//   src:
-//     url("../fonts/ptsansbold.woff2") format("woff2"),
-//     url("../fonts/ptsansbold.woff") format("woff");
-// }
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
 body {
-  background-color: aqua;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  // text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }

@@ -1,0 +1,37 @@
+.main-nav {
+  text-transform: uppercase;
+  color: $black;
+  position: relative;
+}
+
+.main-nav__toggle {
+  width: 68px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  z-index: 12;
+  top: -65px;
+  right: 0;
+  position: absolute;
+  padding: 0;
+}
+
+// .main-nav__toggle {
+//   width: 24px;
+//   height: 16px;
+//   position: absolute;
+//   right: 20px;
+//   top: -28px;
+// }
+
+// .main-nav--closed .main-nav__toggle::before {
+//   content: "";
+//   position: absolute;
+//   top: -2px;
+//   right: -1px;
+//   width: 24px;
+//   height: 2px;
+//   background-color: $black;
+//   box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+// }
