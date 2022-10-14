@@ -4,13 +4,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2px;
-      margin-top: 26px;
-    margin-bottom: 26px;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 
 .contacts__intro {
   text-transform: uppercase;
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -18,11 +18,10 @@
 }
 
 .contacts__text {
-  font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-color: $darkgrey;
-margin: 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $darkgrey;
+  margin: 0;
 }
