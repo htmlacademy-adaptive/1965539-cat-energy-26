@@ -1,0 +1,13 @@
+.main-footer__wrap {
+  background-color: $lightgrey;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 33px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}

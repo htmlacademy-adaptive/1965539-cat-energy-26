@@ -1,0 +1,72 @@
+.case {
+  background-color: $grey;
+
+  overflow: hidden;
+}
+
+.case__wrap {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.case-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+}
+
+.case-item {
+  text-align: center;
+}
+
+.case__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.case__intro {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: $darkgrey;
+}
+
+.case-item__number {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  border: 1px solid $grey2;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.case-item__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  color: $darkgrey;
+  margin-top: -20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: $grey;
+}
+
+.case-item--costs {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
