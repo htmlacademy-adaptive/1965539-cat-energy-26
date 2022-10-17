@@ -10,14 +10,15 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="wrap">
+    <div class="main-header__logo-wrap">
       <a class="main-header__logo">
         <picture>
           <img class="logo-mobile" src="./img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
         </picture>
       </a>
+      <div class="main-header__logo-text"></div>
     </div>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -241,7 +242,22 @@
           </dl>
         </div>
         <p class="case-item case-item--costs">Затраты на питание: 15 000 РУБ. </p>
-        <img class="case__foto" src="" alt="Фото Кота">
+        <div class="case__slider">
+          <div class="slider">
+            <div class="slider__container slider__container--fat">
+              <div class="slider__img slider__img--fat"></div>
+            </div>
+            <div class="slider__container slider__container--slim">
+              <div class="slider__img slider__img--slim"></div>
+            </div>
+            <button class="slider__control" type="button">
+              <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
+                <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -313,6 +329,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
+  <script src="./js/script2.js"></script>
 </body>
 
 </html>

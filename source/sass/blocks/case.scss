@@ -70,3 +70,21 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .case__slider {
+    position: relative;
+    background: #eaeaea;
+
+     &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-color: $white;
+    }
+  }
+}
