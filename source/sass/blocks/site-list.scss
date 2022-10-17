@@ -18,3 +18,22 @@
   padding-bottom: 24px;
   border-top: 1px solid $lightgrey3;
 }
+
+@media (min-width: $tablet-width) {
+  // .site-list {
+  //   width: 471px;
+  // }
+
+  .site-list__item {
+    border: none;
+    padding-top: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
