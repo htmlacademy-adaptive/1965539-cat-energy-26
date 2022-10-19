@@ -15,10 +15,13 @@
     content: "";
     display: block;
     height: 100%;
-    background: url("../img/index-background-mobile.jpg") no-repeat center 0;
+    background: url(../img/index-background-mobile.jpg) no-repeat center 0;
     background-size: auto 100%;
     z-index: 1;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -44,12 +47,15 @@
   margin-left: 35px;
   margin-top: 27px;
   margin-bottom: 25px;
+  position: relative;
+  z-index: 5;
 }
 
 .intro__slogan {
   text-transform: uppercase;
   position: relative;
   z-index: 5;
+  font-size: 14px;
 }
 
 .intro__link {
@@ -57,6 +63,7 @@
   padding: 11px 44px;
   display: block;
   text-decoration: none;
+  font-size: 14px;
   line-height: 18px;
   background-color: #68b738;
   color: $white;
@@ -64,10 +71,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
-    &__title {
-      font-size: 60px;
-      line-height: 60px;
-    }
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

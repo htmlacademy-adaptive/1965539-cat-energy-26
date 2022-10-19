@@ -1,0 +1,11 @@
+.case-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .case-list {
+    grid-template-columns: 162px 162px 1fr;
+  }
+}

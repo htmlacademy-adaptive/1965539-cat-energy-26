@@ -3,7 +3,6 @@
 }
 
 .features__title {
-  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -46,4 +45,39 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+    margin-top: 45px;
+    margin-bottom: 72px;
+    margin-right: 30px;
+  }
+
+  .features__list {
+  margin-left: 30px;
+  margin-right: 109px;
+  padding-left: 0;
+  row-gap: 37px;
+  grid-template-columns: 1fr 1fr;
+      column-gap: 137px;
+}
+
+.features__marker {
+    height: 80px;
+    width: 80px;
+}
+
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__item {
+    grid-template-columns: none;
+    gap: 31px;
+}
 }

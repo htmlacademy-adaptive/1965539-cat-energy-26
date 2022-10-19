@@ -44,3 +44,9 @@
     height: 52px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    grid-template-columns: 1fr 720px;
+  }
+}
