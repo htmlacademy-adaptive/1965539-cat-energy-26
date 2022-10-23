@@ -69,6 +69,7 @@
     padding-right: 37px;
     position: relative;
     padding-top: 161px;
+    align-items: end;
   }
 
   .catalog__img-container {
@@ -91,6 +92,7 @@
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    align-self: start;
   }
 
   .catalog__indicator {
