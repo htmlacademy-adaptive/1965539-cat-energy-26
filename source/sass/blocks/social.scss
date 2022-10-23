@@ -16,6 +16,14 @@
   margin-left: 13px;
 }
 
+.social__svg {
+  fill: $darkgrey3;
+}
+
+.social__link:hover .social__svg {
+  fill: $green;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     display: flex;

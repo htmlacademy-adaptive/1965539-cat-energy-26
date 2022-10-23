@@ -26,6 +26,10 @@
   margin: 0;
 }
 
+.contacts__google iframe {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__intro {
     font-size: 20px;

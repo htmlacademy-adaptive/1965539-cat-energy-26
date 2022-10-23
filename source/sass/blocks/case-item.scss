@@ -48,6 +48,7 @@
   .case-item__description {
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
   }
 
   .case-item--costs {
@@ -56,5 +57,20 @@
     grid-column: none;
     width: 174px;
     text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case-item--costs {
+    grid-column: span 2;
+    width: auto;
+  }
+
+  .case-item__description {
+    background-color: $lightgrey;
+  }
+
+  .case-item__description {
+    background-color: $lightgrey;
   }
 }

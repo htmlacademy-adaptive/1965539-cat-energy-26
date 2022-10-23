@@ -21,6 +21,14 @@
   align-items: center;
 }
 
+.copyright__svg {
+  fill: $darkgrey3;
+}
+
+.copyright__link:hover .copyright__svg {
+  fill: $green;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;

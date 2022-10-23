@@ -28,25 +28,54 @@
   }
 
   .main-header__logo {
+    top: 26px;
+    left: 30px;
+    width: 174px;
+    height: 52px;
+    transform: none;
+    position: absolute;
+    margin: 0;
+    z-index: 10;
+  }
+
+  .main-header__logo-mobile {
     display: none;
   }
 
   .main-header__logo-text {
-    display: none;
-  }
-
-  .main-header__logo-wrap {
     display: flex;
     background: url("../img/logo-tablet.svg") no-repeat;
     top: 26px;
     left: 30px;
     width: 174px;
     height: 52px;
+    transform: none;
+    position: static;
   }
+
+  // .main-header__logo-wrap {
+  //   display: flex;
+  //   background: url("../img/logo-tablet.svg") no-repeat;
+  //   top: 26px;
+  //   left: 30px;
+  //   width: 174px;
+  //   height: 52px;
+  // }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .main-header {
     grid-template-columns: 1fr 720px;
+  }
+
+  .main-header__logo-text {
+    background: url("../img/logo-desktop.svg") no-repeat;
+    width: 202px;
+    height: 59px;
+  }
+
+  .main-header__logo {
+    width: 202px;
+    height: 59px;
   }
 }

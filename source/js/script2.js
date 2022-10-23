@@ -1,9 +1,9 @@
 const navMain = document.querySelector('.main-nav');
-const logoHeaderMain = document.querySelector('.main-header__logo');
+const logoHeaderMain = document.querySelector('.main-header__logo-wrap');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
-logoHeaderMain.classList.remove('main-header__logo--nojs');
+logoHeaderMain.classList.remove('main-header__logo-wrap--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

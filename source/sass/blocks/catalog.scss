@@ -9,6 +9,11 @@
   display: grid;
   margin-left: 20px;
     margin-right: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog__img {
+grid-row: span 2;
 }
 
 .сatalog__button {
@@ -23,6 +28,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   height: 40px;
   cursor: pointer;
+  grid-column: span 2;
 }
 
 .catalog__name {

@@ -28,10 +28,8 @@
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
-.main-nav--opened .main-nav__toggle::after {
-    transform: rotate(-45deg);
-}
 
+@media (max-width: $mobile-width-only) {
 .main-nav--opened .main-nav__toggle::before {
     transform: rotate(45deg);
     box-shadow: none;
@@ -47,10 +45,13 @@
     background-color: $black;
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
+.main-nav--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+}
+
+  // .main-nav--closed .site-list__item {
+  //   display: none;
+  // }
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;

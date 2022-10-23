@@ -120,3 +120,17 @@
     background: url("../img/cat-slim-tablet.png") no-repeat center center;
   }
 }
+
+@media (min-width: $desktop-width) {
+.slider__container {
+    background-color: $lightgrey;
+    position: absolute;
+    top: -100px;
+}
+
+ .slider__container::before {
+    position: absolute;
+    top: 0;
+}
+
+}
