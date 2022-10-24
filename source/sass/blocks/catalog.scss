@@ -7,8 +7,6 @@
 
 .catalog__item {
   display: grid;
-  margin-left: 20px;
-  margin-right: 20px;
   grid-template-columns: 1fr 1fr;
   column-gap: 36px;
 }
@@ -17,21 +15,6 @@
   grid-row: span 2;
   align-self: center;
   justify-self: end;
-}
-
-.сatalog__button {
-  text-transform: uppercase;
-  justify-content: center;
-  background-color: #68b738;
-  color: #ffffff;
-  border: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
-  height: 40px;
-  cursor: pointer;
-  grid-column: span 2;
 }
 
 .catalog__name {
@@ -53,12 +36,14 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     grid-template-columns: 1fr 1fr;
     row-gap: 141px;
+    column-gap: 60px;
   }
 
   .catalog__item {
@@ -84,10 +69,6 @@
     top: -73px;
   }
 
-  .сatalog__button {
-    grid-column: span 1;
-  }
-
   .catalog__name {
     text-align: center;
     font-size: 20px;
@@ -105,6 +86,7 @@
   .catalog {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 143px;
+    column-gap: 80px;
   }
 
   .catalog__item {
@@ -112,5 +94,6 @@
     padding-left: 39px;
     padding-right: 38px;
     padding-top: 162px;
+    margin: 0;
   }
 }

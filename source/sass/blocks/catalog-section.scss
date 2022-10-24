@@ -100,9 +100,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-section {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
   .catalog-section__list {
     display: flex;
-    margin: 20px;
   }
 
   .catalog-section__img {
@@ -117,17 +121,17 @@
     // margin-right: 52px;
     // margin-bottom: 59px;
     // margin-top: 47px;
-   padding-left: 52px;
+    padding-left: 52px;
     padding-right: 52px;
     padding-bottom: 59px;
     padding-top: 47px;
   }
 
   .catalog-section__description {
-  grid-column: span 2;
+    grid-column: span 2;
   }
 
   .catalog-section__link {
-  grid-column: span 2;
+    grid-column: span 2;
   }
 }

@@ -1,24 +1,24 @@
-.page-catalog {
+.page-form {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.page-catalog__title {
+.page-form__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-catalog {
+  .page-form {
     margin-left: 30px;
     margin-right: 30px;
   }
 
-  .page-catalog__title {
-    margin-bottom: 163px;
+  .page-form__title {
+    margin-bottom: 54px;
     margin-top: 64px;
     font-size: 60px;
     line-height: 60px;
@@ -26,13 +26,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-catalog {
+  .page-form {
     margin-left: 110px;
     margin-right: 110px;
   }
 
-  .page-catalog__title {
-    margin-bottom: 165px;
-    margin-top: 74px;
+  .page-form__title {
+    margin-bottom: 56px;
+    margin-top: 77px;
   }
 }
