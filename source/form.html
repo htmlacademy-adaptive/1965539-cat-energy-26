@@ -46,32 +46,61 @@
   </header>
   <main class="page-form">
     <h1 class="page-form__title">Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="selection-form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <p><label>ИМЯ:* <input class="form" type="text" name="username" placeholder="Барсик" required></label></p>
-      <p><label>Вес (кг):* <input class="form" type="number" name="weight" placeholder="7" required></label></p>
-      <p><label>Возраст (лет): <input class="form" type="number" name="age" placeholder="7"></label></p>
-      <label>Похудение<input class="form" type="radio" name="need" value="weight loss" checked></label>
-      <label>Набор массы<input class="form" type="radio" name="need" value="weight gain"></label>
-      <label>Незнаю (нужен ваш совет)<input class="form" type="radio" name="need" value="advice"></label>
+    <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <p><label class="form__label">ИМЯ:* <input class="form" type="text" name="username" placeholder="Барсик"
+            required></label></p>
+      <p><label class="form__label">Вес (кг):* <input class="form" type="number" name="weight" placeholder="7"
+            required></label></p>
+      <p><label class="form__label">Возраст (лет): <input class="form" type="number" name="age" placeholder="7"></label>
+      </p>
+      <ul>
+        <li>
+          <label form__label form__label--radio>Похудение<input class="form" type="radio" name="need"
+              value="weight loss" checked></label>
+        </li>
+        <li>
+          <label form__label form__label--radio>Набор массы<input class="form" type="radio" name="need"
+              value="weight gain"></label>
+        </li>
+        <li>
+          <label form__label form__label--radio>Незнаю (нужен ваш совет)<input class="form" type="radio" name="need"
+              value="advice"></label>
+        </li>
+      </ul>
       <h2>Контактные данные</h2>
-      <p><label>
+      <p><label class="form__label">
           E-mail:* <input class="form" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         </label></p>
-      <p><label>
+      <p><label class="form__label">
           Телефон:* <input class="form" type="tel" name="phone" placeholder="8 (960) 900-60-90"
             pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
         </label></p>
       <h2>Комментарий</h2>
-      <textarea class="form" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <textarea class="form" name="comment" cols="30" rows="5"
+        placeholder="Расскажите обо всех повадках кота"></textarea>
       <h2>Дополнительно</h2>
-      <p><label>Сахаразаменитель<input class="form" type="checkbox" checked name="sugar substitute"></label></p>
-      <p><label>Молоко<input class="form" type="checkbox" name="milk"></label></p>
-      <p><label>Питьевая вода<input class="form" type="checkbox" name="water"></label></p>
-      <p><label>Витамины<input class="form" type="checkbox" name="vitamins"></label></p>
-      <p><input class="form" type="submit" value="Отправить заявку"></p>
+      <ul>
+        <li>
+          <p><label class="form__label form__label--checkbox">Сахаразаменитель<input class="form" type="checkbox"
+                checked name="sugar substitute"></label></p>
+        </li>
+        <li>
+          <p><label class="form__label form__label--checkbox">Молоко<input class="form" type="checkbox"
+                name="milk"></label></p>
+        </li>
+        <li>
+          <p><label class="form__label form__label--checkbox">Питьевая вода<input class="form" type="checkbox"
+                name="water"></label></p>
+        </li>
+        <li>
+          <p><label class="form__label form__label--checkbox">Витамины<input class="form" type="checkbox"
+                name="vitamins"></label></p>
+        </li>
+      </ul>
+      <input class="form__button button" type="submit" value="Отправить заявку">
     </form>
-    <p>*Обязательные поля</p>
+    <p class="form__hint">* - Обязательные поля</p>
   </main>
   <footer class="main-footer">
     <section class="contacts">

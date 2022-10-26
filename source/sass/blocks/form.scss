@@ -1,3 +1,16 @@
-.form {
-  border: 1px solid $lightgrey2;
+// .form {
+//   border: 1px solid $lightgrey2;
+// }
+
+.form__hint {
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  text-align: center;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
 }
