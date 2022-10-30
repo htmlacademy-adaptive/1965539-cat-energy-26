@@ -3,6 +3,7 @@
   height: 256px;
   position: relative;
   margin: 0 auto;
+  padding-bottom: 46px;
 }
 
 .slider__container {
@@ -77,6 +78,7 @@
   .slider {
     width: 560px;
     height: 512px;
+    padding-bottom: 98px;
   }
 
   .slider__container {
@@ -88,7 +90,7 @@
       display: block;
       position: absolute;
       width: 100%;
-      height: 100px;
+      height: 149px;
       top: 0;
       left: 0;
       background-color: $white;
@@ -107,6 +109,10 @@
     width: 0;
   }
 
+  .slider__control {
+    top: 42%;
+  }
+
   .slider__img {
     width: 560px;
     height: 512px;
@@ -122,15 +128,15 @@
 }
 
 @media (min-width: $desktop-width) {
-.slider__container {
+  .slider__container {
     background-color: $lightgrey;
     position: absolute;
     top: -100px;
-}
+  }
 
- .slider__container::before {
+  .slider__container::before {
     position: absolute;
     top: 0;
-}
+  }
 
 }

@@ -36,7 +36,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    padding-top: 42px;
+    padding-top: 70px;
     font-size: 20px;
     line-height: 30px;
     margin-right: 34px;
@@ -44,5 +44,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .site-list__link {
+    color: $white;
   }
 }

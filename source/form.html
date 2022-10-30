@@ -55,17 +55,23 @@
       <p><label class="form__label">Возраст (лет): <input class="form" type="number" name="age" placeholder="7"></label>
       </p>
       <ul>
-        <li>
-          <label form__label form__label--radio>Похудение<input class="form" type="radio" name="need"
-              value="weight loss" checked></label>
+        <li class="radio">
+          <input type="radio" class="radio__input visually-hidden" id="loss" name="plan-type" value="loss" checked>
+          <label for="loss" class="radio__label">
+            Похудение
+          </label>
         </li>
-        <li>
-          <label form__label form__label--radio>Набор массы<input class="form" type="radio" name="need"
-              value="weight gain"></label>
+        <li class="radio">
+          <input type="radio" class="radio__input visually-hidden" id="gain" name="plan-type" value="gain">
+          <label for="gain" class="radio__label">
+            Набор массы
+          </label>
         </li>
-        <li>
-          <label form__label form__label--radio>Незнаю (нужен ваш совет)<input class="form" type="radio" name="need"
-              value="advice"></label>
+        <li class="radio">
+          <input type="radio" class="radio__input visually-hidden" id="dont-know" name="plan-type" value="dont-know">
+          <label for="dont-know" class="radio__label">
+            Не знаю (нужен ваш совет)
+          </label>
         </li>
       </ul>
       <h2>Контактные данные</h2>
@@ -164,7 +170,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script2.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,47 @@
 .case-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // column-gap: 32px;
+  // margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  // flex-wrap: wrap;
+  max-width: 320px;
+}
+
+.case-list__item {
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+  padding: 13px 18px 15px;
+  margin: 0;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .case-list {
-    grid-template-columns: 162px 162px 1fr;
+    justify-content: left;
+    margin: 0;
+    padding-top: 0;
+    max-width: inherit;
+  }
+
+  .case-list__item {
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 162px;
+    margin-right: 40px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .case-list {
-    grid-template-columns: 162px 162px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .case-list {}
+// }
