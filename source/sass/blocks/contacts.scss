@@ -73,6 +73,36 @@
   }
 
   .contacts__map {
-    min-height: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrap {
+    position: absolute;
+    background: $white;
+    padding-top: 58px;
+    padding-left: 80px;
+    padding-right: 75px;
+    padding-bottom: 62px;
+    margin-left: 110px;
+    margin-top: 90px;
+    column-gap: 69px;
+  }
+
+  .contacts__adress {
+    text-align: start;
+  }
+
+  .contacts__city {
+    margin-top: 18px;
+  }
+
+  .contacts__map {
+    background-color: #f2f2f2;
   }
 }

@@ -206,7 +206,7 @@
                 16
                 часов
                 в день.</p>
-              <div class="case__info-wrapper">
+              <div class="case__info">
                 <div class="case-list">
                   <div class="case-list__item case-item">
                     <span class="case-item__number">5 кг</span>
@@ -217,7 +217,9 @@
                     <span class="case-item__description">затрачено времени</span>
                   </div>
                 </div>
-                <p class="case-item case-item--costs">Затраты на питание: 15 000 РУБ. </p>
+                <p class="case-item case-item--costs">Затраты на питание:
+                  <span class="case-item__sum">15&nbsp;000&nbsp;руб.</span>
+                </p>
               </div>
             </div>
           </div>
@@ -257,20 +259,18 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div> -->
       <div class="contacts__map">
-        <div class="contacts__map">
-          <picture>
-            <source media="(min-width: 1400px)" type="image/webp"
-              srcset="./img/map-desktop.webp 1x, ./img/map-2x-desktop.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp"
-              srcset="./img/map-tablet.webp 1x, ./img/map-2x-tablet.webp 2x">
-            <source media="(min-width: 10px)" type="image/webp"
-              srcset="img/map-mobile.webp 1x, img/map-2x-mobile.webp 2x">
-            <source media="(min-width: 1400px)" srcset="./img/map-desktop.png 1x, ./img/map-2x-desktop.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-2x-tablet.png 2x">
-            <img class="contacts__image-map" src="./img/map-mobile.png" srcset="./img/map-2x-mobile.png 2x"
-              alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
-          </picture>
-        </div>
+        <picture>
+          <source media="(min-width: 1400px)" type="image/webp"
+            srcset="./img/map-desktop.webp 1x, ./img/map-2x-desktop.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp"
+            srcset="./img/map-tablet.webp 1x, ./img/map-2x-tablet.webp 2x">
+          <source media="(min-width: 10px)" type="image/webp"
+            srcset="img/map-mobile.webp 1x, img/map-2x-mobile.webp 2x">
+          <source media="(min-width: 1400px)" srcset="./img/map-desktop.png 1x, ./img/map-2x-desktop.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-2x-tablet.png 2x">
+          <img class="contacts__image-map" src="./img/map-mobile.png" srcset="./img/map-2x-mobile.png 2x"
+            alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </picture>
       </div>
     </section>
     <div class="main-footer__wrap container">

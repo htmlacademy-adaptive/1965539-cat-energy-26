@@ -75,7 +75,7 @@
     padding-right: 30px;
   }
 
-  .case__info-wrapper {
+  .case__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +87,7 @@
   .case__intro {
     width: 436px;
     padding-top: 73px;
+    margin-bottom: 67px;
   }
 
   .case__content {
@@ -113,5 +114,12 @@
     background-color: $lightgrey;
     padding-left: 110px;
     padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .case__info {
+    display: block;
+    margin-bottom: 75px;
   }
 }

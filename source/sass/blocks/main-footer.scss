@@ -27,8 +27,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer {
+    background-color: #f2f2f2;
+  }
+
   .main-footer__wrap {
     min-height: 149px;
+    margin: 0 auto;
     // padding: 0;
     // margin: 0;
   }

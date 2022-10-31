@@ -42,6 +42,8 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .case-list {}
-// }
+@media (min-width: $desktop-width) {
+  .case-list {
+    margin-bottom: 57px;
+  }
+}

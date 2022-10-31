@@ -84,7 +84,7 @@
 
 @media (min-width: $desktop-width) {
   .case-item--costs {
-    // grid-column: span 2;
+    text-align: left;
     width: auto;
   }
 
@@ -94,5 +94,9 @@
 
   .case-item__description {
     background-color: $lightgrey;
+  }
+
+  .case-item__sum {
+    margin-left: 62px;
   }
 }
