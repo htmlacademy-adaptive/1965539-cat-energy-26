@@ -20,20 +20,33 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .site-list {
-  //   width: 471px;
-  // }
-
   .site-list__item {
     border: none;
     padding-top: 42px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    padding-top: 70px;
+    font-size: 20px;
+    line-height: 30px;
     margin-right: 34px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .site-list__link {
+    color: $white;
   }
 }

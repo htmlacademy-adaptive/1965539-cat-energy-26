@@ -19,6 +19,9 @@
     background-size: auto 100%;
     z-index: 1;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -42,21 +45,26 @@
   text-align: center;
   margin-right: 35px;
   margin-left: 35px;
-  margin-top: 27px;
-  margin-bottom: 25px;
+  margin: 0;
+  position: relative;
+  z-index: 5;
 }
 
 .intro__slogan {
   text-transform: uppercase;
   position: relative;
   z-index: 5;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 22px;
 }
 
-.intro__link {
+.intro__button {
   margin: 0 20px 20px;
   padding: 11px 44px;
   display: block;
   text-decoration: none;
+  font-size: 14px;
   line-height: 18px;
   background-color: #68b738;
   color: $white;
@@ -64,10 +72,104 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
-    &__title {
-      font-size: 60px;
-      line-height: 60px;
+  .intro__wrapper {
+    margin-bottom: 526px;
+  }
+
+  .intro__container {
+    color: $black;
+    background-color: initial;
+    padding: 50px 116px 0px;
+    margin-bottom: 48px;
+
+    &::before {
+      display: none;
     }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 610px;
+      width: 709px;
+      background: url("../../img/index-can-tablet-1x.png") no-repeat;
+      position: absolute;
+      bottom: -629px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -10;
+    }
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 416px;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 42px;
+    text-align: left;
+  }
+
+  .intro__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    // .button {
+    padding: 17px 0;
+    margin-left: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 228px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/intro-bg-desktop.jpg") no-repeat right 0;
+      background-size: cover;
+      right: 0;
+      top: -132px;
+      width: 50%;
+      height: calc(100% + 70px);
+      z-index: 1;
+    }
+  }
+
+  .intro__wrapper {
+    z-index: 5;
+    width: 1275px;
+    margin: 0 auto;
+    padding-left: 107px;
+    box-sizing: border-box;
+  }
+
+  .intro__container {
+    padding: 0;
+    margin-bottom: 52px;
+
+    &::after {
+      z-index: 2;
+      background: url("../img/index-can-desktop.png") no-repeat;
+      bottom: -348px;
+      left: 62%;
+    }
+  }
+
+  .intro__button {
+    margin-left: 0;
+  }
+
+  .intro__slogan {
+    margin-top: 39px;
   }
 }

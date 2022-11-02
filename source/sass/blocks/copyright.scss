@@ -8,7 +8,7 @@
   justify-content: space-between;
   text-decoration: none;
   color: $darkgrey;
-  padding-top: 22px;
+  padding-top: 15px;
   padding-bottom: 22px;
   align-items: center;
 }
@@ -21,6 +21,14 @@
   align-items: center;
 }
 
+.copyright__svg {
+  fill: $darkgrey3;
+}
+
+.copyright__link:hover .copyright__svg {
+  fill: $green;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
@@ -30,7 +38,10 @@
   }
 
   .copyright__text {
-  margin-right: 22px;
-}
+    margin-right: 22px;
+  }
 
+  .copyright__link {
+    padding-top: 21px;
+  }
 }

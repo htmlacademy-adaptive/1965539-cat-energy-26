@@ -6,14 +6,22 @@
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 22px;
+  padding-top: 14px;
   padding-bottom: 22px;
   flex-wrap: wrap;
 }
 
 .social__item {
-  margin-right: 13px;
-  margin-left: 13px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.social__svg {
+  fill: $darkgrey3;
+}
+
+.social__link:hover .social__svg {
+  fill: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +33,13 @@
     margin: 0;
     padding: 0;
     align-items: center;
-
+    padding-left: 25px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-left: 28px;
+    padding-bottom: 10px;
+  }
 }
