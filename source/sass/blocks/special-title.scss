@@ -44,7 +44,7 @@
   padding: 0 22px 0 20px;
 }
 
-@media (min-width: @tablet) {
+@media (min-width: $tablet-width) {
   .special-title {
     padding-left: 30px;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: @desktop) {
+@media (min-width: $desktop-width) {
   .special-title {
     padding-left: 0;
   }

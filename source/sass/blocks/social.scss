@@ -33,5 +33,13 @@
     margin: 0;
     padding: 0;
     align-items: center;
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-left: 28px;
+    padding-bottom: 10px;
   }
 }
